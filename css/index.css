@@ -7,12 +7,85 @@ body{
     position: relative;
 
 }
-@media (min-width: 1200px){ 
+@media (min-width: 700px)
+{
+    #title_h1
+    {
+        font-size: 60px;
+        font-weight: bold;
+        letter-spacing:0.04rem;
+        line-height:1.16;
+    }
+    #title_h5
+    {
+       margin-top: 25px;
+       font-family: 'Poppins', sans-serif;
+       font-size: 22px;
+       font-weight: 300;
+    
+   
+    }
+    #title_btn
+    {
+        margin-top: 25px; 
+        
+        padding: 20px 51px!important;
+        font-size: 16px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        border-radius: 45px;
+        border-color:#f64a5f;
+        background-color:#f64a5f;
+    
+    }
+    #title_btn:hover
+    {
+        background-color:black;     
+        border-color: black;   
+    }    
+}
+@media (max-width: 700px)
+{
+    #title_h1
+    {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing:0.04rem;
+        line-height:1.16;
+    }
+    #tile_h5
+    {
+        margin-top: 25px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    #title_btn
+    {
+        margin-top: 25px; 
+        
+        padding: 20px 51px!important;
+        font-size: 16px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        border-radius: 45px;
+        border-color:#f64a5f;
+        background-color:#f64a5f;
+    
+    }
+    #title_btn:hover
+    {
+        background-color:black;     
+        border-color: black;   
+    }    
+}
+@media (min-width: 600px){ 
     header .header-container
     {
         max-width:1224px;
     }
 }
+
 #header .header-container .nav-item
 {
     font-size: 17px;
@@ -33,38 +106,223 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-#parallax .parallax_content
+@media (min-width: 700px)
 {
-    position: absolute;
-    top:40%;
-    left: 18%;
-
-}
-#parallax .parallax_content h1
-{
-    font-size: 60px;
-    font-weight: bold;
-    letter-spacing:0.04rem;
-    line-height:1.16;
-}
-#parallax .parallax_content p
-{
-    margin-top: 25px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px;
-    font-weight: 300;
-}
-#parallax .parallax_content button
-{
-    margin-top: 25px;
+    #parallax .parallax_content
+    {
+        position: absolute;
+        top:40%;
+        left: 18%;
     
-    padding: 20px 51px;
-    font-size: 16px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    border-radius: 45px;
-    border-color:#f64a5f;
-    background-color:#f64a5f;
+    }
 
+    #parallax .parallax_content button
+    {
+         margin-top: 25px; 
+        
+        padding: 20px 51px!important;
+        font-size: 16px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        border-radius: 45px;
+        border-color:#f64a5f;
+        background-color:#f64a5f;
+    
+    }
+    #parallax .parallax_content button:hover
+    {
+
+        border-color:black;
+        background-color:black;
+    
+    }
+    
+}
+@media (max-width: 700px)
+{
+    #parallax .parallax_content
+    {
+        position: absolute;
+        top:35%;
+        left: 18%;
+    
+    }
+
+    #parallax .parallax_content button
+    {
+        margin-top: 25px;
+        
+        padding: 20px 51px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        border-radius: 45px;
+        border-color:#f64a5f;
+        background-color:#f64a5f;
+    
+    }
+    #about
+
+    {
+        background-image: none; 
+        position: relative;
+        height: 80vh;
+       
+    }
+}
+@media (min-width: 0px)
+{
+    #about
+
+    {
+        background-image: url(../img/bg1.jpg);  
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100vh;
+       
+    }
+    #about .about-container
+    {
+
+        position: relative;
+        max-width: 1224px;
+
+        
+    }
+   
+    #about .about-container .about-container-item-1
+    {
+        height: 100vh;
+
+        position: relative;
+        left: -1.25%;
+    }
+    #about .about-container .about-container-item-1 .about-container-image
+    {
+        overflow: hidden;
+ 
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 520px;
+        height: 500px;
+        
+    }  
+    #about .about-container .about-container-item-1 .about-container-image img
+    {
+
+      
+
+        background-position: center;
+        background-repeat: no-repeat
+        
+    }  
+    #about .about-container .about-container-item-2 p
+    {
+       
+    font-style: italic;
+    font-size: 23px;
+    color: #1d1d1d !important;
+    letter-spacing: 0em;
+    }    
+    #about .about-container .about-container-item-2 span
+    
+    {
+        font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #757575;
+    }
+    #about_2
+    {
+        background-image: url(../img/bg3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 60vh;
+    }
+    #about_2 .about_2-container
+    {
+        vertical-align: initial;
+        position: relative;
+        max-width: 1224px;
+    }    
+    #about_2 .about_2-container h1
+    {
+        font-size: 60px;
+        text-align: center;
+    }   
+    #about_2 .about_2-container h2
+    {
+        font-family: 'PT Serif', serif;
+        font-style: italic;
+        font-size: 48px;
+        color: #757575;
+        text-align: center;
+    }
+    #about_3
+    {
+        background-image: url(../img/bg4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 95vh;
+        
+    }
+    #about_3 .about_3-container-1
+    {
+        background-image: url(../img/bg2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 95vh;
+    }    
+    #about_3 .nav-tabs .nav-link.active {
+        font-weight:bold;
+        background-color: transparent;
+        border-bottom:3px solid #dd0000;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        color: black;
+    }
+    #about_3 .nav-tabs .nav-link
+    {
+      color: #757575;
+      border: none;
+    }
+    #about_3 .tab-content h3
+    {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        font-family: 'PT Serif', serif;
+        letter-spacing: 0em;
+        color: #1d1d1d;
+    }
+    #about_3 .tab-content .normal
+    {
+        font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #757575;
+    }    
+    #about_3 .tab-content h6
+    {
+        font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.35;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0em;
+    text-align: inherit;
+    color: #1d1d1d;
+    }    
+    
 }

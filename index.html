@@ -12,33 +12,66 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/animate.css">
 
     <title>High Class Nail & Spa Unclock Your Real Beauty</title>
 </head>
 
 <body>
 
+    <div class="header_mobile d-sm-block  d-md-none">
 
+        <nav class="navbar navbar-expand-sm navbar-light bg-light d-flex justify-content-end">
+
+
+
+            <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-primary" style="color:black!important"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PROMOTIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BOOKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NEWS</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </div>
     <section id="parallax">
         <header id="header">
 
             <div class="header-container mr-auto ml-auto">
 
-                <div>
-                    <a class="navbar-brand" href="#">
-                        <img src="./img/logo.png" class="img-fluid" alt="">
-                    </a>
-                </div>
-                <nav class="cnavbar navbar-expand-sm navbar-light bg-light d-flex justify-content-end" style="background-color: transparent!important">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" class="img-fluid" alt="">
+                </a>
+
+                <nav class="cnavbar navbar-expand-sm navbar-light bg-light d-flex justify-content-end d-sm-none d-lg-block" style="background-color: transparent!important">
 
 
 
-                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+                    <div class="collapse navbar-collapse" id="">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">ABOUT</a>
@@ -67,13 +100,14 @@
 
         </header>
 
-        <div class="parallax_content">
-            <h1>Hundreds of Colors,
+        <div class="parallax_content flex-column">
+            <h1 id="title_h1">Hundreds of Colors,
                 <br> Organic Nail Polish!</h1>
-            <p>With its diverse list of members, professional
+            <h5 id="title_h5">With its diverse list of members, professional
                 <br> equipment and lots of tidy courts the.
-            </p>
-            <button class="btn text-light">BOOK NOW</button>
+            </h5>
+
+            <button class="btn text-light" id="title_btn">ABOUT</button>
 
         </div>
 
@@ -82,9 +116,150 @@
 
 
     <section id="about">
-        <img src="./img/bg2.jpg" class="img-fluid" alt="">
+
+
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="about-container row h-100 ml-auto mr-auto">
+            <div class="col-md-6 d-sm-none d-md-block about-container-item-1 h-sm-0 h-md-100">
+
+                <div class="about-container-image wow fadeInLeft ">
+
+
+                    <img src="./img/bg2.jpg" class="d-md-none d-sm-none d-lg-block" alt="">
+                </div>
+
+
+            </div>
+            <div class="col-md-6 col-sm-12" style="padding-left: 100px">
+                <div class="about-container-item-2">
+
+                    <div class="d-md-block d-sm-none">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+
+                    <h2 id="title_h1">About Us...</h2>
+                    <br>
+
+                    <p id="title_h5 font-weight-italic">“Every year we help thousands of women feel and look even more stylish!”</p>
+
+                    <span>When you feel like your daily work routine really exhausted you, feel free to come by.Our professional
+                        manicurists will do their best to soothe and calm your body & mind!Choose any color of your nail
+                        polish – and we will make it work for you!</span>
+                    <br>
+                    <br>
+                    <button class="btn text-light" id="title_btn">ABOUT</button>
+                </div>
+            </div>
+        </div>
+
     </section>
 
+
+
+    <section id="about_2">
+        <div class="ml-auto mr-auto about_2-container row h-100">
+            <div class="col-lg-7 d-flex justify-content-center align-items-center">
+                <div class="text-center">
+                    <h1 class="h1 font-weight-bold">Take Care of
+                        <span style="color: #f5506a">Your Nails</span>
+                    </h1>
+                    <h2 class="h2">Paint Them Color Awesome!</h2>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+    <section id="about_3">
+        <div class="row">
+            <div class="col-lg-6 about_3-container-1">
+
+            </div>
+            <div class="col-lg-4">
+                <div class="about_3-container">
+                    <div class="">
+                        <h1 id="title_h1">Do Nail & Waxing</h1>
+                        
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <nav class="nav-justified ">
+                                        <div class="nav nav-tabs " id="nav-tab" role="tablist">
+                                            <a id="nav_tab" class="nav-item nav-link active wow" id="pop1-tab" data-toggle="tab" href="#pop1" role="tab" aria-controls="pop1" aria-selected="true">Manicure</a>
+                    <a id="nav_tab" class="nav-item nav-link wow" id="pop2-tab" data-toggle="tab" href="#pop2" role="tab" aria-controls="pop2" aria-selected="false">Pedicure</a>
+                    <a id="nav_tab" class="nav-item nav-link wow" id="pop3-tab" data-toggle="tab" href="#pop3" role="tab" aria-controls="pop3" aria-selected="false">Waxing</a>
+
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="pop1" role="tabpanel" aria-labelledby="pop1-tab">
+                                            <div class="pt-3"></div>
+                                            <div>
+                                                <h3>Manicure</h3>
+                                                <p class="normal">While hand and nail care is usually restricted to just a few services, we’ve
+                                                    got a wide selection of various pedicure methods, just as well as the overall
+                                                    hands skin care treatments…</p>
+                                                <h6>Here is list of those: </h6>
+                                                <ul class="normal">
+                                                    <li>Regular Manicure</li>
+                                                    <li>Spa Manicure</li>
+                                                </ul>
+                                            </div>
+                                    
+                                        </div>
+                                        <div class="tab-pane fade" id="pop2" role="tabpanel" aria-labelledby="pop2-tab">
+                                            <div class="pt-3"></div>
+                                            <h3>Manicure</h3>
+                                            <p class="normal">While hand and nail care is usually restricted to just a few services, we’ve
+                                                got a wide selection of various pedicure methods, just as well as the overall
+                                                hands skin care treatments…</p>
+                                            <h6>Here is list of those: </h6>
+                                            <ul class="normal">
+                                                <li>Regular Manicure</li>
+                                                <li>Spa Manicure</li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pop3" role="tabpanel" aria-labelledby="pop3-tab">
+                                            <div class="pt-3"></div>
+                                            <div>
+
+
+                                                <h3>Manicure</h3>
+                                                <p class="normal">While hand and nail care is usually restricted to just a few services, we’ve
+                                                    got a wide selection of various pedicure methods, just as well as the
+                                                    overall hands skin care treatments…</p>
+                                                <h6>Here is list of those: </h6>
+                                                <ul class="normal">
+                                                    <li>Regular Manicure</li>
+                                                    <li>Spa Manicure</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
 
 
 
@@ -98,6 +273,12 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
 </body>
 
 </html>
