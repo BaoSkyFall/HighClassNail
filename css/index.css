@@ -7,6 +7,7 @@ body{
     position: relative;
 
 }
+
 @media (min-width: 700px)
 {
     #title_h1
@@ -278,6 +279,7 @@ body{
         background-image: url(../img/bg2.png);
         background-size: cover;
         background-repeat: no-repeat;
+        margin-top: -100px;
         height: 95vh;
     }    
     #about_3 .nav-tabs .nav-link.active {
@@ -325,4 +327,5 @@ body{
     color: #1d1d1d;
     }    
     
+
 }
