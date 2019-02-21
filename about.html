@@ -9,8 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="./css/about-css.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
     
     <title>About</title>
 </head>
@@ -34,7 +36,7 @@
                     <a class="nav-link" href="#">ABOUT</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">SERVICE</a>
+                    <a class="nav-link" href="service.html">SERVICE</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">GALLERY</a>
@@ -75,7 +77,7 @@
                         <a class="nav-link" href="#">ABOUT</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">SERVICE</a>
+                        <a class="nav-link" href="service.html">SERVICE</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">GALLERY</a>
@@ -115,32 +117,46 @@
                your nail polish – and we will make it work for you!</p>
           </div>
         </div>        
-        <div class="col-lg-6 col-md-6">
-          <video src=""></video>
-        </iv>
+        
+                <video controls class="col-lg-6 col-md-6" height="300px" style="object-fit: cover"
+                    poster="./img/post1-768x480.jpg">
+                        <source src="./video/about-us.mp4">
+                </video>
+        
       </div>
     </div>
   </section>
 
-  <h1 id="title_content2">Gallery</h1>
   
-    <section id="content_2">
-      <div class="container">      
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <div id="content2_left">
-
-            </div>
-          </div>        
-          <div class="col-lg-6 col-md-6">
-            
+  
+  <section id="content_2">
+    <h1 id="title_content2">Gallery</h1>
+    <div class="container">      
+        <div class="box">
+          <div class="img-box">
+            <a data-fancybox="gallery" href="./img/about/gallery/anhtiem1.png"><img src="./img/about/gallery/anhtiem1.png"></a>                
           </div>
         </div>
-      </div>
-      <div id="view_all_btn">        
-        <a href="" class="btn btn-default btn-lg btn-content-2">VIEW ALL GALLERY</a>
-      </div>
-    </section>
+        <div class="box">
+            <div class="img-box">
+                <a data-fancybox="gallery" href="./img/about/gallery/anhtiem2.png"><img src="./img/about/gallery/anhtiem2.png"></a> 
+              </div>
+        </div>
+        <div class="box">
+            <div class="img-box">
+                <a data-fancybox="gallery" href="./img/about/gallery/anhtiem3.png"><img src="./img/about/gallery/anhtiem3.png"></a> 
+              </div>
+        </div>
+        <div class="box">
+            <div class="img-box">
+                <a data-fancybox="gallery" href="./img/about/gallery/anhtiem4.png"><img src="./img/about/gallery/anhtiem4.png"></a> 
+              </div>
+        </div>
+    </div>
+    <div id="view_all_btn">        
+      <a href="" class="btn btn-default btn-lg btn-content-2">VIEW ALL GALLERY</a>
+    </div>
+  </section>
 
     <section class="testimonial-section2">
       <br>
@@ -207,7 +223,7 @@
       <h id="content_4_title">
           Apply for a Job!
       </h>
-      <p style="font-size:18px">We are always looking for new people to fill our positions either as administrative or facility-maintenance<br>personnel, or as one of our manicurists!</p>
+      <p style="font-size:18px;margin-bottom:30px">We are always looking for new people to fill our positions either as administrative or facility-maintenance<br>personnel, or as one of our manicurists!</p>
       <hr>
         <a href="" class="btn btn-default btn-lg btn-content-4">CAREERS</a>
     </section>
@@ -273,6 +289,8 @@
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/index.js"></script>
+    
 </body>
 </html>
