@@ -1,9 +1,11 @@
 body{
     font-family: "PT Serif", serif;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
 
+/* Css Header */
 @media (min-width: 700px)
 {
     #title_h1
@@ -85,58 +87,9 @@ body{
     font-weight: 400;
     letter-spacing:1px;
 }
-#title .container h1
-{
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.16;
-    font-family: 'PT Serif', serif;
-    letter-spacing: 0.04em;
-    text-align: inherit;
-    color: #1d1d1d;
-}
-#title .container h6
-{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 1.35;
-    font-family: Poppins, sans-serif;
-    letter-spacing: 0em;
-    text-align: inherit;
-    color: #1d1d1d;
-}
-#service .service-item .service-item-content h2
-{
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.2;
-    font-family: 'PT Serif', serif;
-    letter-spacing: 0.02em;
-    text-align: inherit;
-    color: #1d1d1d;
-}
-#service .service-item .service-item-content p
-{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-        font-family: 'Poppins', sans-serif;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #757575;
-}
-#service .service-item .service-item-content h5
-{
-    font-style: normal;
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 1.59;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.02em;
-    text-align: inherit;
-    color: #757575;
-}
+/* CSS header */
+
+/* Css Footer */
 #footer .footer-container .col-md-4
 {
     border-right: solid 1.4px gray;
@@ -183,3 +136,58 @@ body{
     background-color: black;
     border:  2px solid black;
 }
+/* Css Footer */
+
+/* CSS body */
+#gallery-tittle{
+    font-size: 1.5cm;    
+    font-weight: bold;
+}
+
+#gallery-des{
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+#gallery-fone{    
+    width: 100%;        
+}
+
+#content_2{
+    margin-top: 50px;   
+    margin-bottom: 100px; 
+}
+
+#content_2 .container{
+    width: 920px;    
+    min-height: 50px;
+    margin: auto;
+    padding: 0;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#content_2 .container .box{            
+    margin: 2px;    
+    width: 300px;
+    height: auto;    
+    object-fit: contain;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#content_2 .container .box .img-box{
+    position: relative;
+}
+
+#content_2 .container .box .img-box img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+#content_2 .container .box:hover .img-box img{
+    transform: scale(1.2);
+}
+/* CSS body */
