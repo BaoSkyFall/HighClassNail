@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/booking.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <title>Caldendar</title>
+</head>
+
+<body>
+        <div class="header_mobile d-sm-block  d-md-none">
+
+                <nav class="navbar navbar-expand-sm navbar-light bg-light d-flex justify-content-end">
+        
+        
+        
+                    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-primary" style="color:black!important"></span>
+                    </button>
+        
+        
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">SERVICE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">GALLERY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="promotion.html">PROMOTIONS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">BOOKING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">NEWS</a>
+                            </li>
+        
+                        </ul>
+        
+                    </div>
+        
+                </nav>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/logo.png" class="img-fluid" alt="">
+                </a>
+        
+            </div>
+            <header id="header">
+        
+                <div class="header-container container">
+        
+        
+                    <nav class="cnavbar navbar-expand-sm navbar-light bg-light d-flex justify-content-end d-sm-none d-lg-block" style="background-color: transparent!important">
+                        <div class="collapse navbar-collapse" id="">
+                            <a class="navbar-brand" href="./index.html">
+                                <img src="./img/logo.png" class="img-fluid" alt="">
+                            </a>
+        
+                            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">ABOUT</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="service.html">SERVICE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gallery.html">GALLERY</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">PROMOTIONS</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">BOOKING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">NEWS</a>
+                                </li>
+        
+                            </ul>
+        
+                        </div>
+        
+                    </nav>
+        
+        
+                </div>
+        
+            </header>
+
+            <section id="title">
+                    <div class="container text-center">
+                        <h1 id="title_h1" class="mb-3" style="font-size: 60px">Booking</h1>
+            
+            
+                    </div>
+                    <br><br>
+                </section>
+    <section>
+            <div class="container" style="background-color: #F64A5F">
+                    <div id="calendar"></div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Request an Appointment</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="recipient-name" class="col-form-label">Your Email:</label>
+                                      <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="message-text" class="col-form-label">Note:</label>
+                                      <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <p>Please confirm that you would like to request the following appointment:
+                                    </p>
+                                    <div class="calendar-modal">
+                                        <i class="fa fa-calendar"></i>
+                                        <span id="text-date"></span>
+                                    </div>
+                            
+
+                                  </form>
+                            </div>
+                            <div class="modal-footer justify-content-start">
+                              <button type="button" class="btn btn-book">Request Appointment</button>                                
+                              <button type="button" class="btn btn-secondary btn-cancel" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+    </section>
+
+
+
+    <!-- <div class="details">
+        <h3 class="text-center">Available Appointments on 23 Feb 2019</h3>
+        <div class="d-flex justify-content-between">
+            <h4> 9:00 am – 10:00 am
+            </h4>
+            <button class="btn" id="title_btn">BOOK APPOINTMENTS</button>
+        </div>
+        <div class="d-flex justify-content-between">
+            <h4>  10:00 am – 11:00 am
+
+            </h4>
+            <button class="btn" id="title_btn">BOOK APPOINTMENTS</button>
+        </div>
+        <div class="d-flex justify-content-between">
+            <h4>   11:00 am – 12:00 pm
+
+
+            </h4>
+            <button class="btn" id="title_btn">BOOK APPOINTMENTS</button>
+        </div>
+        <div class="d-flex justify-content-between">
+            <h4>    12:00 pm – 1:00 pm
+
+
+            </h4>
+            <button class="btn" id="title_btn">BOOK APPOINTMENTS</button>
+        </div>
+       
+
+    </div> -->
+<!-- Button trigger modal -->
+
+
+  
+  <!-- Modal -->
+  
+    <footer id="footer">
+            <br>
+            <br>
+            <div class="row ml-auto mr-auto container footer-container">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;border: none">
+                        <img src="./img/logo.png" class="card-img-top w-50" alt="...">
+                        <div class="card-body">
+                            <p class="card-title">HIGH CLASS NAIL & SPA
+                                <br> UNLOCK YOUR REAL BEAUTY</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+    
+                    <ul class="d-flex flex-column justify-content-center footer-container-content">
+                        <li>
+    
+                            <i class="fa fa-map-marker"></i>
+                            <span style="color: #757575">4285 Strandherd Drive,
+                                <br>
+                            </span>
+                            <span style="color: #757575;margin-left: 36px;">Unit 11 Ottawa, Ontario, K2J5P8</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <span>highclassnail.vip@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span>613 - 823 - 6879</span>
+                        </li>
+                    </ul>
+    
+    
+    
+                </div>
+                <div class="col-md-4">
+                    <div class="mt-4">
+                        <a href="https://www.facebook.com/highclassnails.vip/" target="_blank">
+                            <i class="fa fa-facebook icon" href="https://www.facebook.com/highclassnails.vip/"></i>
+    
+                        </a>
+                        <i class="fa fa-google icon" style="padding: 15px 17.5px;"></i>
+                        <i class="fa fa-twitter icon" style="padding: 15px 17px;"></i>
+    
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+            <br>
+            <br>
+    
+        </footer>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+
+    <script src="./js/booking.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
+    <script>
+
+    </script>
+</body>
+
+</html>
