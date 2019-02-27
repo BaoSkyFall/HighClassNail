@@ -1,7 +1,10 @@
-body{
+html,body{
     font-family: "PT Serif", serif;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 /* Css Header */
@@ -46,6 +49,9 @@ body{
 }
 @media (max-width: 700px)
 {
+    #header{
+        text-align: center;
+    }
     #title_h1
     {
         font-size: 30px;
@@ -87,6 +93,8 @@ body{
     letter-spacing:1px;
 }
 /* Css Header */
+
+/* Reponsive */
 
 #title_content1{
     font-weight: bold;
@@ -137,23 +145,60 @@ body{
     text-align: center
 }
 
-#content_2 .container{
-    width: 808px;    
-    min-height: 50px;
-    margin: auto;
-    padding: 0;    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+@media (min-width: 415px)
+{
+    #content_2 .container{
+        width: 808px;    
+        min-height: 50px;
+        margin: auto;
+        padding: 0;    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    #content_2 .container .box{            
+        margin: 2px;    
+        width: 400px;
+        height: auto;    
+        overflow: hidden;
+        box-sizing: border-box;
+        display: inline-block;
+
+    }
+
 }
 
-#content_2 .container .box{            
-    margin: 2px;    
-    width: 400px;
-    height: auto;    
-    overflow: hidden;
-    box-sizing: border-box;
-    display: inline-block;
+@media (min-width: 0px) and (max-width:414px)
+{
+    #content_2 .container{
+        width: 300px;    
+        min-height: 50px;
+        margin: auto;
+        padding: 0;    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    #content_2 .container .box{            
+        margin: 2px;    
+        width: 320px;
+        height: auto;    
+        overflow: hidden;
+        box-sizing: border-box;
+        display: inline-block;
+
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0%);
+    }
+
+    #content1_left{
+        display: block;
+    }
 }
 
 #content_2 .container .box .img-box{
@@ -937,3 +982,5 @@ body{
     border:  2px solid black;
 }
 /* Css Footer */
+
+/* Reponsive */
