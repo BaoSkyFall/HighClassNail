@@ -4,7 +4,7 @@ body{
     padding: 0;
 }
 
-@media (min-width: 700px)
+@media (min-width: 716px)
 {
     #title_h1
     {
@@ -43,7 +43,7 @@ body{
         border-color: black;   
     }    
 }
-@media (max-width: 700px)
+@media (max-width: 716px)
 {
     #title_h1
     {

@@ -1,4 +1,8 @@
-body{
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
     margin: 0;
     padding: 0;
     font-family: "PT Serif", serif;
@@ -137,21 +141,6 @@ body{
 }
 
 /* Body */
-.img-post {
-    padding: 0;
-    width: 300px;
-    height: 300px;    
-}
-
-.blog-content{    
-    padding-top: 10px;
-    padding-left: 75px;    
-}
-
-.blog-content h2{
-    font-weight: bold;
-}
-
 .blog-content .content{
     color: #7f8c8d;
     font-size: 20px;
@@ -161,6 +150,20 @@ body{
     color: #f64a5f;
     font-size: 13px;
     font-weight: bold;
+}
+
+.blog-content .h2{
+    color: black;
+}
+
+.img-post{
+    object-fit: cover;
+}
+
+.blog-content .h2:hover{
+    color: #f64a5f;
+    text-decoration-line: none;
+    text-decoration-color: transparent;
 }
 
 .read_more_btn{
@@ -183,4 +186,232 @@ body{
 .read_more_btn:hover{   
     color: white; 
     background-color: #f64a5f;
+}
+
+
+/* Smartphone - landscape ( nằm dọc ) */
+@media screen and (min-width: 0px) and (max-width:414px){
+    .img-post {
+        margin-top: 20px;
+
+        padding: 0;
+        width: 300px;
+        height: 300px;    
+        
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .blog-content{    
+        padding-top: 10px;
+        padding-left: 10px; 
+        text-align: justify; 
+    }
+
+    .blog-content .h2{
+        font-weight: bold;
+        font-size: 23px;
+        text-align: center;
+
+        margin-bottom: 20px;
+    }
+
+    .blog-content br{
+        display: none;
+    }
+
+    .blog-content .side-indo{
+        font-size: 15px;    
+        text-align: center;    
+    }
+
+    .read_more_btn{
+        margin-top: 5px;
+        margin-bottom: 20px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Smartphone - portrait ( nằm ngang ) */
+@media screen and (min-width: 415px) and (max-height: 760px){
+    .img-post {                
+        width: 200px;
+        height: 180px;    
+    }   
+
+    .blog-content{    
+        padding: 0; 
+        width: 350px;
+        text-align: justify; 
+    }
+
+    .blog-content .h2{
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+
+    .blog-content br{
+        display: none;
+    }
+
+    .blog-content .content{
+        color: #7f8c8d;
+        font-size: 12px;
+    }
+
+    .blog-content .side-indo{
+        font-size: 8px;    
+        text-align: center;    
+    }
+
+    .read_more_btn{
+        margin-top: 2px;
+        margin-bottom: 10px;
+
+        font-size: 12px;
+
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Ipad - landscape ( nằm dọc ) */
+@media screen and (min-width: 760.1px) and (max-width: 1023.9px){
+    .img-post {        
+        width: 300px;
+        height: 240px;    
+    }   
+
+    .blog-content{    
+        padding: 0; 
+        width: 450px;
+        text-align: justify; 
+    }
+
+    .blog-content .h2{
+        font-weight: bold;        
+        text-align: center;
+        
+    }
+
+    .blog-content br{
+        display: none;
+    }
+
+    .blog-content .content{
+        color: #7f8c8d;
+        font-size: 20px;
+    }
+
+    .blog-content .side-indo{
+        font-size: 10px;    
+        text-align: center;    
+    }
+
+    .read_more_btn{        
+        margin-bottom: 5px;  
+        font-size: 13px;  
+
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Ipad - portrait ( nằm ngang ) và Ipad pro ( cỡ lớn ) */
+@media screen and (min-width: 1023.99px) and (max-width: 1365.9px) { 
+    .img-post {        
+        width: 320px;
+        height: 320px;    
+    }   
+
+    .blog-content{    
+        padding: 0; 
+        width: 450px;
+        text-align: justify; 
+    }
+
+    .blog-content .h2{
+        font-weight: bold;        
+        text-align: center;        
+    }
+
+    .blog-content br{
+        display: none;
+    }
+
+    .blog-content .content{
+        color: #7f8c8d;
+        font-size: 20px;
+    }
+
+    .blog-content .side-indo{
+        font-size: 20px;        
+        text-align: center;
+    }
+
+    .read_more_btn{        
+        margin-bottom: 5px;  
+        font-size: 20px;  
+
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }   
+}
+
+/* Màn hình máy tính - ipad pro nằm ngang */
+@media screen and (min-width: 1366px){
+    .img-post {        
+        width: 300px;
+        height: 300px;    
+        
+        position: relative;
+        left: 0%;
+        transform: translateX(0%);
+    }
+
+    .blog-content{    
+        padding-left: 20px;         
+        text-align: justify; 
+    }
+
+    .blog-content .h2{
+        font-size: 30px;
+
+        font-weight: bold;        
+        text-align: center;        
+    }
+
+    .blog-content br{
+        display: block;
+    }
+
+    .blog-content .content{
+        padding-top: 10px;
+        padding-left: 20;  
+
+        color: #7f8c8d;
+        font-size: 20px;
+    }
+
+    .blog-content .side-indo{
+        font-size: 20px;        
+        text-align: left;
+    }
+
+    .read_more_btn{        
+        margin-bottom: 5px;  
+        font-size: 20px;  
+
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }   
 }

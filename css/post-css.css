@@ -185,6 +185,27 @@ body{
 }
 
 .admin-post{
-    padding-left: 30px;
+    padding: auto;
     margin-bottom: 100px;
+}
+
+/* Smartphone - landscape ( nằm dọc ) */
+@media screen and (min-width: 0px) and (max-width:414px){        
+    
+}
+
+/* Smartphone - portrait ( nằm ngang ) */
+@media screen and (min-width: 415px) and (max-height: 760px){
+}
+
+/* Ipad - landscape ( nằm dọc ) */
+@media screen and (min-width: 760.1px) and (max-width: 1023.9px){
+}
+
+/* Ipad - portrait ( nằm ngang ) và Ipad pro ( cỡ lớn ) */
+@media screen and (min-width: 1023.99px) and (max-width: 1365.9px) {    
+}
+
+/* Màn hình máy tính - ipad pro nằm ngang */
+@media screen and (min-width: 1366px){
 }
