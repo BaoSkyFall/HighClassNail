@@ -121,7 +121,7 @@ body{
     background-image: url('../img/bg.jpg');
 
   /* Set a specific height */
-  height: 130vh; 
+  height: 100vh; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -288,7 +288,7 @@ body{
         background-size: cover;
         background-repeat: no-repeat;
         height: 95vh;
-        margin-bottom: 300px;
+
     }
     #about_3 .about_3-container-1 img
     {
@@ -1040,7 +1040,7 @@ body{
     }
 
     .space_1{
-        height: 280px;
+
     }
 
     #about-2 .about_2-container h1{
@@ -1380,6 +1380,184 @@ body{
 
    #about_3{
     height: 95vh;
-    margin-bottom: 300px;
+
    }
+}
+#gallery-fone{    
+    width: 100%;        
+}
+
+#content_2{
+    margin-top: 50px;   
+    margin-bottom: 15px; 
+}
+
+#content_2 .container .box .img-box{
+    position: relative;
+}
+
+#content_2 .container .box .img-box img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+#content_2 .container .box:hover .img-box img{
+    transform: scale(1.2);
+}
+/* CSS body */
+
+/* Smartphone - landscape ( nằm dọc ) */
+@media screen and (min-width: 0px) and (max-width:414px){
+    #gallery-tittle{
+        font-size: 1.5cm;    
+        font-weight: bold;
+    }
+
+    #gallery-des{
+        font-size: 15px;
+
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }    
+
+    #content_2 .container{
+        width: 300px;    
+        min-height: 50px;
+        margin: auto;
+        padding: 0;    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        
+    }
+    
+    #content_2 .container .box{            
+        margin: 5px auto;    
+        width: 300px;
+        height: auto;    
+        object-fit: contain;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+}
+
+/* Smartphone - portrait ( nằm ngang ) */
+@media screen and (min-width: 415px) and (max-height: 760px)
+{   
+   
+    #content_2 .container{
+        width: 550px;    
+        min-height: 50px;
+        margin: auto;
+        padding: 0;    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        
+    }
+    
+    #content_2 .container .box{            
+        margin: 5px auto;    
+        width: 260px;
+        height: auto;    
+        object-fit: contain;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+}
+
+/* Ipad - landscape ( nằm dọc ) */
+@media screen and (min-width: 760.1px) and (max-width: 1023.9px){
+    #gallery-des{
+        font-size: 18px;
+
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }   
+
+    #content_2 .container{
+        width: 750px;    
+        min-height: 50px;
+        margin: auto;
+        padding: 0;    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    
+    #content_2 .container .box{            
+        margin: 5px auto;    
+        width: 240px;
+        height: auto;    
+        object-fit: contain;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+}
+
+/* Ipad - portrait ( nằm ngang ) và Ipad pro ( cỡ lớn ) */
+@media screen and (min-width: 1023.99px) and (max-width: 1365.9px) {
+    #gallery-des{
+        font-size: 20px;
+
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }   
+
+    #content_2 .container{
+        width: 1000px;    
+        min-height: 50px;
+        margin: auto;
+        padding: 0;    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    
+    #content_2 .container .box{            
+        margin: 5px auto;    
+        width: 320px;
+        height: auto;    
+        object-fit: contain;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+}
+
+/* Màn hình máy tính - ipad pro nằm ngang */
+@media screen and (min-width: 1366px){
+    #gallery-des{
+        font-size: 20px;
+
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }   
+
+    #content_2 .container{
+        width: 920px;    
+        min-height: 50px;
+        margin: auto;
+        padding: 0;    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #content_2 .container .box{            
+        margin: 2px;    
+        width: 300px;
+        height: auto;    
+        object-fit: contain;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: inline-block;
+    }
 }

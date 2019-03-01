@@ -230,7 +230,7 @@ html,body{
         margin-top: 5px;
         margin-bottom: 20px;
         position: relative;
-        left: 50%;
+        left: 12%;
         transform: translateX(-50%);
     }
 }
@@ -276,7 +276,7 @@ html,body{
         font-size: 12px;
 
         position: relative;
-        left: 50%;
+        left: 12%;
         transform: translateX(-50%);
     }
 }
@@ -319,7 +319,7 @@ html,body{
         font-size: 13px;  
 
         position: relative;
-        left: 50%;
+        left: 12%;
         transform: translateX(-50%);
     }
 }
@@ -361,7 +361,7 @@ html,body{
         font-size: 20px;  
 
         position: relative;
-        left: 50%;
+        left: 12%;
         transform: translateX(-50%);
     }   
 }
@@ -411,7 +411,7 @@ html,body{
         font-size: 20px;  
 
         position: relative;
-        left: 50%;
+        left: 12%;
         transform: translateX(-50%);
     }   
 }
