@@ -314,27 +314,27 @@ $(document).ready(function () {
                 <div class="d-flex justify-content-around align-items-center">
                     <h5> 9:00 am – 10:00 am
                     </h5>
-                    <button class="btn" id="title_btn" data-date="${str + " at 9:00 am - 10:00 am"} " data-toggle="modal" data-target="#exampleModal">BOOK APPOINTMENTS</button>
+                    <button class="shedul-embed-button-link" href="https://app.shedul.com/online_bookings/highclass-nails-f6mf3nco/link" class="btn" id="title_btn" data-date="${str + " at 9:00 am - 10:00 am"} " data-toggle="modal" data-target="#exampleModal">BOOK APPOINTMENTS</button>
                 </div>
                 <div class="d-flex justify-content-around mt-3">
                     <h5>  10:00 am – 11:00 am
         
                     </h5>
-                    <button class="btn" id="title_btn" data-date="${str + " at 10:00 am – 11:00 am"} " data-toggle="modal" data-target="#exampleModal">BOOK APPOINTMENTS</button>
+                    <button class="btn shedul-embed-button-link" href="https://app.shedul.com/online_bookings/highclass-nails-f6mf3nco/link" id="title_btn" data-date="${str + " at 10:00 am – 11:00 am"} " data-toggle="modal" data-target="#exampleModal">BOOK APPOINTMENTS</button>
                 </div>
                 <div class="d-flex justify-content-around mt-3">
                 <h5>    11:00 am – 12:00 pm
     
     
                 </h5>
-                <button class="btn" id="title_btn" data-date="${str + " at 11:00 am – 12:00 pm"}" data-toggle="modal" data-target="#exampleModal">BOOK APPOINTMENTS</button>
+                <button class="btn shedul-embed-button-link" href="https://app.shedul.com/online_bookings/highclass-nails-f6mf3nco/link" id="title_btn" data-date="${str + " at 11:00 am – 12:00 pm"}" data-toggle="modal" data-target="#exampleModal">BOOK APPOINTMENTS</button>
             </div>
                 <div class="d-flex justify-content-around mt-3">
                     <h5>    12:00 pm – 1:00 pm
         
         
                     </h5>
-                    <button class="btn" id="title_btn" data-date="${str + " at  12:00 pm – 1:00 pm"}" data-toggle="modal" data-target="#exampleModal">BOOK APPOINTMENTS</button>
+                    <button class="btn shedul-embed-button-link" href="https://app.shedul.com/online_bookings/highclass-nails-f6mf3nco/link" id="title_btn" data-date="${str + " at  12:00 pm – 1:00 pm"}" data-toggle="modal" data-target="#exampleModal">BOOK APPOINTMENTS</button>
                 </div>
                
                 
@@ -427,7 +427,5 @@ $(document).ready(function () {
 
 
     })
-    $("body").delegate("#title_btn", "click", function () {
-        $("#text-date").html($(this).attr("data-date"));
-    })
+ 
 })

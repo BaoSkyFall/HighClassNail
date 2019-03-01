@@ -2,8 +2,7 @@ html,body{
     height: 100%;
     width: 100%;
 
-    font-family: "PT Serif", serif;
-    text-align: center;
+    font-family: "PT Serif", serif;    
     margin: 0;
     padding: 0;
 
@@ -141,12 +140,13 @@ html,body{
     background-color: black;
     border:  2px solid black;
 }
-
 /* Css Footer */
 
 /* CSS body */
 
-
+#gallery-des,#gallery-tittle{
+    text-align: center;
+}
 
 
 #gallery-fone{    
