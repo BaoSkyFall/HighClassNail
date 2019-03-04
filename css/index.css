@@ -1274,6 +1274,10 @@ body{
        background-image: url('../img/bg-ipad.jpg');
        background-position: right;
    }
+
+   #about .about-1-image img{
+    width: 100px;
+}
 }
 
 /* Ipad - portrait ( nằm ngang ) và Ipad pro ( cỡ lớn ) */
@@ -1287,6 +1291,10 @@ body{
 
     .space_3{
         height:10px;
+    }
+
+    #about .about-1-image img{
+        width: 200px;
     }
 }
 
@@ -1392,6 +1400,10 @@ body{
    #about_3{
     height: 95vh;
 
+   }
+
+   #about .about-1-image img{
+       width: 520px;
    }
 }
 
