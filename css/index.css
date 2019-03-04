@@ -216,7 +216,7 @@ body{
    
     #about .about-container .about-container-item-1
     {
-        height: 100vh;
+        
 
         position: relative;
         left: -1.25%;
@@ -228,8 +228,7 @@ body{
         position: absolute;
         background-position: center;
         background-repeat: no-repeat;
-        width: 520px;
-        height: 500px;
+        
         
     }  
     #about .about-container .about-container-item-1 .about-container-image img
@@ -1031,8 +1030,8 @@ body{
         background-color: white;
     }
 
-    .about-1-image{
-       display: none;
+    .about-1-image img{
+       width: 300px;
     }
 
     .about-container-item-2 #title_h1{
@@ -1040,7 +1039,7 @@ body{
     }
 
     .space_1{
-
+        height: 0px;
     }
 
     #about-2 .about_2-container h1{
@@ -1048,7 +1047,7 @@ body{
     }
 
     #about_3 .row .about_3-img{
-        display: none;
+        
     }
 
     #about_3 .about_3-container #title_h3{
@@ -1061,7 +1060,7 @@ body{
     }    
 
     #about_3 .space_2{
-        display: none;
+        height: 0px;
     }
 
     #about_3 .about_3-container .btn{
@@ -1086,25 +1085,22 @@ body{
         transform: translateX(-50%);
      }
 
-     #blog{
-         background-image: none;         
-         text-align: center;         
+     .space_3{
+         height: 400px;
      }
 
-     #blog #title_h5{
-        color: #f64a5f;
-         font-size: 30px;         
-         font-weight: bold;
+     #about .about-1-image{
+         position: relative;
+         left: auto;
+         height: 300px;
      }
-    
-    .blog-container .card{
-        width: 300px;
-        margin-bottom: 20px;
+     .space_4{
+         height: 400px;
+     }
 
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+     #parallax{
+         background-image: url('../img/bg-smartphone.jpg');         
+     }
 }
 
 /* Smartphone - portrait ( nằm ngang ) */
@@ -1144,8 +1140,8 @@ body{
         margin-bottom: 50px;
     }
 
-    .about-1-image{
-       display: none;
+    .about-1-image img{
+        width: 300px;       
     }
 
     .about-container-item-2 #title_h1{
@@ -1156,8 +1152,7 @@ body{
         height: 300px;
     }
 
-    #about_3 .row .about_3-img{
-        display: none;
+    #about_3 .row .about_3-img{        
     }
 
     #about_3 .about_3-container #title_h3{
@@ -1170,7 +1165,7 @@ body{
     }    
 
     #about_3 .space_2{
-        display: none;
+        height: 0px;
     }
 
     #about_3 .about_3-container .btn{
@@ -1197,6 +1192,19 @@ body{
        position: relative;
        left: 50%;
        transform: translateX(-50%);
+   }
+
+   #about .about-1-image{
+    position: relative;
+    left: auto;
+    height: 500px;
+    }
+
+   .space_1{
+       height: 0px;
+   }
+   .space_3{
+       height: 1100px;
    }
 }
 
@@ -1229,7 +1237,7 @@ body{
     }    
 
     #about_3 .space_2{
-        display: none;
+        height: 0px;
     }
 
     #about_3 .about_3-container .btn{
@@ -1238,9 +1246,8 @@ body{
         transform: translateX(-50%);
     }
 
-    .space_3{
-        display: block;
-        height: 200px;
+    .space_3{        
+        height: 500px;
     }
 
     
@@ -1263,6 +1270,10 @@ body{
        transform: translateX(-50%);
    }
 
+   #parallax{
+       background-image: url('../img/bg-ipad.jpg');
+       background-position: right;
+   }
 }
 
 /* Ipad - portrait ( nằm ngang ) và Ipad pro ( cỡ lớn ) */
@@ -1383,6 +1394,8 @@ body{
 
    }
 }
+
+
 #gallery-fone{    
     width: 100%;        
 }
