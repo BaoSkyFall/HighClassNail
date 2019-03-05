@@ -3,7 +3,50 @@ body{
     margin: 0;
     padding: 0;
 }
+@media screen and (min-width: 0px) and (max-width:414px){
 
+    #title_h1
+    {
+
+        text-align: center;
+        font-size: 25px!important;
+        font-weight: bold;
+        letter-spacing:0.04rem;
+        line-height:1.16;
+    }
+    #title_h5
+    {
+       margin-top: 12.5px;
+       font-family: 'Poppins', sans-serif;
+       font-size: 15px!important;
+       font-weight: 300;
+    
+   
+    }
+    #title_btn
+    {
+        margin-top: 17.5px; 
+        
+        padding: 17.5px 40px!important;
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        border-radius: 45px;
+        border-color:#f64a5f;
+        background-color:#f64a5f;
+    
+        
+    }
+    #title_btn:hover
+    {
+        cursor: pointer;
+        background-color:black;     
+        border-color: black;   
+    }
+    #footer .footer-container .col-md-4{
+        border:none;
+    }
+}
 @media (min-width: 700px)
 {
     #title_h1
