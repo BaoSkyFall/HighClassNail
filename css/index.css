@@ -1047,7 +1047,10 @@ body{
         left: 50%;
         transform: translateX(-50%);
     }
-
+   #content_2 .box-gallery
+    {
+        font-size: 1.2rem;
+    }
     .menu{
         display: none;
     }
@@ -1151,7 +1154,10 @@ body{
         left: 50%;
         transform: translateX(-50%);
     }
-
+    #content_2 .box-gallery
+    {
+        font-size: 1.7rem;
+    }
     .menu{
         display: none;
     }
